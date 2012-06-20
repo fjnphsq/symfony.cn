@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+{% include head.html %}
+</head>
+
+<body>
+<!--[if lt IE 7]>你的浏览器太古老了！<![endif]-->
+
+{% include top.html %}
+
+<div class="container">
+<div class="page-header">
+    <h1>{{ page.title }}</h1>
+</div>
+
+<div class="row">
+    <div class="span8">
+        <div class="post">
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="span4">
+        <h3>相关文章</h3>
+        
+        {% if page.categories != empty %}
+        <ul>
+        {% capture leaf_category %}{{page.categories | last}}{% endcapture %}
+        {% for post in site.categories[leaf_category] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+
+<div id="disqus_thread"></div>
+</div>}
+
+{% include foot.html %}
+
+{% include body_closing.html %}
+<script type="text/javascript">
+var disqus_shortname = 'Symfony-cn';
+var disqus_title = '{{ page.title }}';
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=2&amp;uid=716991" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->
+</body>
+
+</html>

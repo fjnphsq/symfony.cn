@@ -1,0 +1,97 @@
+body {
+    padding-top: 60px;
+}
+
+p,
+ul {
+	margin-bottom: 1.5em;
+}
+
+blockquote p {
+	margin-bottom: 0;
+    font-size: 12px;
+    color: #999999;
+}
+
+#takePart h1 {
+    font-size: 36px;
+}
+
+#takePart h2 {
+    margin: 0.7em 0;
+    font-size: 18px;
+    color: #999;
+}
+
+#takePart p {
+    margin: 10px 0 25px;
+    font-size: 16px;
+}
+
+#followUs {
+    margin-left: 30px;
+}
+
+#followUs dd {
+    padding: 10px 0 35px;
+}
+
+#followUs dd.last {
+    padding-bottom: 0;
+}
+
+#followUs dd.other {
+    font-size: 12px;
+    font-family: simsun;
+}
+
+#followUs dd.other strong {
+    font-weight: normal;
+    color: #0088CC;
+}
+
+#footText {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#footText code {
+    border: none;
+    background: none;
+    color: #888;
+}
+
+#footText code span {
+    color: #222;
+}
+
+.update-list {
+    padding-left: 10px;
+}
+
+.update-list h2 {
+    font-size: 16px;
+}
+
+.update-list li {
+    margin-bottom: 7px;
+}
+
+.update-list .date {
+    color: #999999;
+}
+
+.contribute-index h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.contribute-index .row {
+    margin-bottom: 50px;
+}
+
+.post h2,
+.post h3 {
+    margin: 1em 0 0.5em;
+}

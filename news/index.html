@@ -1,0 +1,17 @@
+---
+layout: page
+title: 技术动态
+meta_keywords: 新闻,更新,动态,技术,Symfony,Symfony2,PHP,PHP开发
+meta_description: 了解Web行业里正在发生什么
+active_nav: news
+---
+
+<div class="page-header">
+    <h1>技术动态 <small>了解行业里正在发生什么</small></h1>
+</div>
+
+<ul class="posts">
+    {% for post in site.categories.news %}
+    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

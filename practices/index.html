@@ -1,0 +1,17 @@
+---
+layout: page
+title: 开发实例
+meta_keywords: 开发实例,教程,中文文档,中文教程,Symfony,Symfony2,PHP,PHP开发
+meta_description: Symfony2开发实例
+active_nav: practices
+---
+
+<div class="page-header">
+    <h1>开发实例 <small>代码胜过雄辩</small></h1>
+</div>
+
+<ul class="posts">
+    {% for post in site.categories.practices %}
+    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
