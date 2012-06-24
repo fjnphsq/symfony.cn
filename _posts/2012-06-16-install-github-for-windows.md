@@ -3,12 +3,10 @@ layout: post
 title: 安装GitHub for Windows
 meta_keywords: git,GitHub,教程,参与开源,Windows,Symfony2,Symfony2中文
 meta_descriptions: 安装GitHub for Windows
-categories: [contribute, git]
-permalink: /contribute/install-github-for-windows.html
-active_nav: contribute
+categories: [kb, git]
 ---
 
-> 本文是为了提高Symfony中文社区的参与度，由我们编写的GitHub介绍文章之一。
+{% include why-git.md %}
 
 <p><a class="btn btn-primary" href="http://windows.github.com/" target="_blank">下载GitHub for Windows</a></p>
 

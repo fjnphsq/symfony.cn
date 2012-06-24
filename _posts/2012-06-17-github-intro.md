@@ -3,9 +3,7 @@ layout: post
 title: GitHub介绍
 meta_keywords: git,GitHub,教程,Symfony2,Symfony2中文
 meta_descriptions: 介绍GitHub的使用
-categories: [contribute, git]
-permalink: /contribute/github-intro.html
-active_nav: contribute
+categories: [kb, git, git-basic]
 ---
 
 [GitHub]于2008年上线，在Git代码仓库托管及基本的Web管理界面之外，还提供了订阅、讨论组、公开页面、在线文件编辑器、协作图谱（报表）、代码片段分享（[Gist]）等等功能。正因为这些功能所提供的便利，又经过长期的积累，GitHub的用户活跃度很高，在开源世界里享有深远的声望，形成了所谓的社交编程文化（Social Coding）。此种“社交”，指的是开发者之间的互相认可和协作，你不再需要身处大公司，就能接触到高水平的软件项目。

@@ -3,9 +3,7 @@ layout: post
 title: Windows平台上的Git客户端
 meta_keywords: git,Windows,教程,参与开源,Symfony2,Symfony2中文
 meta_descriptions: Windows平台上的Git客户端
-categories: [contribute, git]
-permalink: /contribute/git-clients-for-windows.html
-active_nav: contribute
+categories: [kb, git]
 ---
 
 > 开源有其独特的魅力。互联网上，软件开源活动愈演愈烈，其间对实用、规范以及效率的追求，促成和发展了很多的理论方法和工具，Git是其中的突出代表。

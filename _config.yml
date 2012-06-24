@@ -1,0 +1,3 @@
+auto: true
+permalink: /articles/:title.html
+markdown: rdiscount

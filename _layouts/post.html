@@ -28,7 +28,9 @@
         <ul>
         {% capture leaf_category %}{{page.categories | last}}{% endcapture %}
         {% for post in site.categories[leaf_category] %}
+            {% if post.url != page.url %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
         {% endfor %}
         </ul>
         {% endif %}

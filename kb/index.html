@@ -1,0 +1,26 @@
+---
+layout: page
+title: 知识库
+meta_keywords: 知识库,教程,文档,Symfony,Symfony2,PHP,PHP开发
+meta_description: 知识库
+---
+
+<div class="page-header">
+    <h1>知识库 <small>代码胜过雄辩</small></h1>
+</div>
+
+<div class="row">
+    <div class="span6">
+        <h2>Symfony开发</h2>
+    </div>
+
+    <div class="span6">
+        <h2>Git / GitHub</h2>
+
+        <ul class="posts unstyled">
+            {% for post in site.categories.git %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
