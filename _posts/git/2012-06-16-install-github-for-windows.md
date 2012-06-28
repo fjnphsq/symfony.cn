@@ -36,11 +36,9 @@ GitHub for Windows会自动找到你机器上的git代码仓库，你可以选�
 就绪
 ----
 
-接下来，你就可以用GitHub for Windows来管理你的代码，或者更酷一些：参与开源项目了。具体的使用，我们将以symfony-docs-chs为例来说明：
+接下来，你就可以用GitHub for Windows来管理你的代码，或者更酷一些：参与开源项目了。我们将以symfony-docs-chs为例来说明[Git的基本用法](/articles/git-guide.html)。
 
-<p><a class="btn btn-success" href="/contribute/use-github-for-windows.html">下一篇：GitHub for Windows的使用</a> 
-<a class="btn" href="/contribute/git-clients-for-windows.html">上一篇：Windows平台上的Git客户端</a>
-<a class="btn" href="/contribute/github-guide.html">GitHub介绍</a></p>
+{% include git-references.md %}
 
 [connect]: /assets/github-for-windows/welcome-connect.gif
 [configure]: /assets/github-for-windows/welcome-configure.gif
