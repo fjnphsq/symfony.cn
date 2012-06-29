@@ -4,6 +4,7 @@ title: Windows平台上的Git客户端
 meta_keywords: git,Windows,教程,参与开源,Symfony2,Symfony2中文
 meta_descriptions: Windows平台上的Git客户端
 categories: [kb, git]
+active_nav: kb
 ---
 
 {% include why-git.md %}

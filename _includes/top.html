@@ -6,16 +6,8 @@
             <ul id="topnav" class="nav">
                 <li{% if page.active_nav == 'home' %} class="active"{% endif %}><a href="/">首页</a></li>
                 <li{% if page.active_nav == 'news' %} class="active"{% endif %}><a href="/news/">技术动态</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        文档
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/docs/" target="_blank">官方文档（中译）</a></li>
-                        <li><a href="/kb/">知识库</a></li>
-                        <!--<li><a href="/references/">资源收录</a></li>-->
-                    </ul>
-                </li>
+                <li><a href="/docs/">中文文档</a></li>
+                <li{% if page.active_nav == 'kb' %} class="active"{% endif %}><a href="/kb/">知识库</a></li>
                 <li{% if page.active_nav == 'contribute' %} class="active"{% endif %}><a href="/contribute/">参与项目</a></li>
                 <!--<li><a href="/qunru/">讨论区</a></li>-->
 				<li{% if page.active_nav == 'contact' %} class="active"{% endif %}><a href="/contact.html">联系我们</a></li>
