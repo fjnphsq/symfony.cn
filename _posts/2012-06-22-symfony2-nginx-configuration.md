@@ -3,20 +3,26 @@ layout: post
 title: Symfony2在Nginx下的配置
 meta_keywords: Symfony2,配置,Nginx
 meta_description: Symfony2在Nginx下的配置
-categories: [practices]
-active_nav: practices
+categories: [kb, kb_symfony]
+active_nav: kb
 ---
+
+来源：http://wiki.nginx.org/Symfony
+
+该配置以example.com作为域名，请根据自己的实际情况进行替换。
+
+<p><span class="label label-important">提醒</span> 此配置仅允许web目录下app.php和app_dev.php两个入口文件以PHP脚本方式运行，web目录下存在的其他PHP文件（比如另外定义了其他的Symfony2入口文件，或者其他PHP程序也安装在该目录下）如果被访问，将被用户下载。</p>
 
     server {
       listen 80;
      
-      server_name symfony2;
-      root /var/www/symfony2/web;
+      server_name example.com; # 域名
+      root /var/www/symfony2/web; # 站点根目录
      
       error_log /var/log/nginx/symfony2.error.log;
       access_log /var/log/nginx/symfony2.access.log;
      
-      # strip app.php/ prefix if it is present
+      # 如果URL中包含app.php，则转发为伪静态格式
       rewrite ^/app\.php/?(.*)$ /$1 permanent;
      
       location / {
@@ -28,7 +34,7 @@ active_nav: practices
         rewrite ^(.*)$ /app.php/$1 last;
       }
      
-      # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+      # 此段为将PHP请求转交给FastCGI服务，PHP-FPM是非常流行的选项。
       location ~ ^/(app|app_dev)\.php(/|$) {
         fastcgi_pass   127.0.0.1:9000;
         fastcgi_split_path_info ^(.+\.php)(/.*)$;
@@ -37,11 +43,13 @@ active_nav: practices
         fastcgi_param  HTTPS              off;
       }
     }
-     
+
+以下为HTTPS配置：
+
     server {
       listen 443;
      
-      server_name symfony2;
+      server_name example.com;
       root /var/www/symfony2/web;
      
       ssl on;
@@ -51,7 +59,6 @@ active_nav: practices
       error_log /var/log/nginx/symfony2.error.log;
       access_log /var/log/nginx/symfony2.access.log;
      
-      # strip app.php/ prefix if it is present
       rewrite ^/app\.php/?(.*)$ /$1 permanent;
      
       location / {
@@ -63,7 +70,6 @@ active_nav: practices
         rewrite ^(.*)$ /app.php/$1 last;
       }
      
-      # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
       location ~ ^/(app|app_dev)\.php(/|$) {
         fastcgi_pass   127.0.0.1:9000;
         fastcgi_split_path_info ^(.+\.php)(/.*)$;
