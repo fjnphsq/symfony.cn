@@ -1,0 +1,17 @@
+---
+layout: page
+title: 博客
+meta_keywords: 原创，分享,Symfony,Symfony2,PHP,PHP开发
+meta_description: 原创观点
+active_nav: news
+---
+
+<div class="page-header">
+    <h1>博客</h1>
+</div>
+
+<ul class="posts">
+    {% for post in site.categories.blog %}
+    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

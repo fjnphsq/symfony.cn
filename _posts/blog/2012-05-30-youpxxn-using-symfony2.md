@@ -3,8 +3,8 @@ layout: post
 title: 日访问量2亿PV的YouPxxn
 meta_keywords: Symfony2,PHP,技术架构,重构,大访问量,负载,HAProxy,ActiveMQ,Varnish,Redis,Nginx,MySQL
 meta_description: 日访问量2亿PV的网站技术重构
-categories: [news, use-cases]
-active_nav: news
+categories: [blog, use-cases]
+active_nav: blog
 ---
 
 > YouPxxn是一家国外的视频网站，其内容的性质不受相关部门的欢迎，但每天承载2亿PV，每秒钟推送3部DVD容量的视频，这样的网站规模，仍然值得我们分析了解其技术架构——尤其当Symfony2是其技术选型方案一部分的时候。 

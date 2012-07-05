@@ -11,7 +11,7 @@ active_nav: kb
 
 该配置以example.com作为域名，请根据自己的实际情况进行替换。
 
-<p><span class="label label-important">提醒</span> 此配置仅允许web目录下app.php和app_dev.php两个入口文件以PHP脚本方式运行，web目录下存在的其他PHP文件（比如另外定义了其他的Symfony2入口文件，或者其他PHP程序也安装在该目录下）如果被访问，将被用户下载。</p>
+<p><span class="label label-important">提醒</span> 此配置仅允许web目录下app.php和app_dev.php两个入口文件以PHP脚本方式运行，web目录下存在的其他PHP文件如果被访问，将被用户下载。</p>
 
     server {
       listen 80;
