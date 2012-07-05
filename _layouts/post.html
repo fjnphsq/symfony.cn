@@ -17,6 +17,8 @@
 <div class="row">
     <div class="span8">
         <div class="post">
+            {% if page.category == 'news' %}<p>时间：{{ page.date | date: "%Y-%m-%d" }}</p>{% endif %}
+
             {{ content }}
         </div>
     </div>

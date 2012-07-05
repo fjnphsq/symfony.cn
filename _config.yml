@@ -1,1 +1,2 @@
 permalink: /articles/:title.html
+markdown: rdiscount

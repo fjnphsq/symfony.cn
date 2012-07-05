@@ -50,9 +50,9 @@ active_nav: home
             <h2>项目动态</h2>
 
             <ul class="unstyled">
-                <li><span class="date">05-26</span> 重新发布网站</li>
-                <li><span class="date">05-19</span> 使用ReadTheDocs.org来托管文档</li>
-                <li><span class="date">03-22</span> 发起项目</li>
+                {% for post in site.categories.news %}
+                <li><span class="date">{{ post.date | date: "%m-%d" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>
